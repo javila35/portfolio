@@ -10,4 +10,4 @@ const Template = ({ children }) => (
   </div>
 )
 
-export default Template
+export default Template;

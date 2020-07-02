@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
 

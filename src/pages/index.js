@@ -1,11 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
-import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
+import Projects from '../components/Projects/Projects'
 
 const HomeIndex = () => {
-  const siteTitle = 'Joe Avila'
+  const siteTitle = 'Joe Avila || Web Dev'
   const siteDescription = 'Web Developer portfolio for Joe Avila.'
 
   return (
@@ -25,21 +24,18 @@ const HomeIndex = () => {
           <p>
             I'm a web developer based in Seattle, WA. <strong>I'm currently seeking my first opportunity</strong> to begin my career in tech.
             My strengths include <strong>communication, adaptability, and  critical thinking</strong>. 
+            <br/>
+            <br/>
+            I work well in a team environment where I get to practice my listening skills and engage in thoughtful conversation.
+            In leadership roles my priority is to understand the strengths and goals of individual members to better place them in positions to challenge their growth.
+            My diverse work history has given me the ability to quickly adapt to changing needs. Whether it's a customer changing their mind on an order,
+            or an operation system being updated on the fly I am quick to change habits.
           </p>
-          <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Learn More
-              </a>
-            </li>
-          </ul>
         </section>
 
         <section id="two">
-          <h2>Projects</h2>
-
-          <Gallery />
-
+          <h1>Projects</h1>
+          <Projects />
           <ul className="actions">
             <li>
               <a href="#" className="button">
