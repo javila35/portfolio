@@ -6,15 +6,13 @@ import avatar from '../assets/images/avatar.jpg'
 const Header = () => (
   <header id="header">
     <div className="inner">
-      <a href="#" className="image avatar">
-        <img src={avatar} alt="" />
+      <a href="/" className="image avatar">
+        <img src={avatar} alt="Portrait of Joe Avila" />
       </a>
       <h1>
-        <strong>I am Strata</strong>, a super simple
+        <strong>Joe Avila</strong>
         <br />
-        responsive site template freebie
-        <br />
-        crafted by <a href="http://html5up.net">HTML5 UP</a>.
+        Web Developer
       </h1>
     </div>
     <Footer />
