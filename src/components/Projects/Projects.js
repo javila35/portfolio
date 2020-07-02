@@ -5,11 +5,16 @@ function Projects() {
 
     function renderProjects(projectsArray) {
         return projectsArray.map((proj, index) => {
-            const {link, name, repo, thumbnail} = proj;
+            const {description, link, name, repo, thumbnail} = proj;
             return (
-                <li>
-                    <img src={thumbnail} className="image"></img>
-                    <a href={link}>{name}</a>
+                <li key="index" className="work-item">
+                    <img src={thumbnail} className="image" alt={`${name} thumbnail`}></img>
+                    <h3>
+                        <a href={link} target="_blank">
+                            {name}
+                        </a>
+                    </h3>
+                    <p>{description}</p>
                     <br/>
                     <a href={repo} className="icon fa-github" target="_blank">
                         <span className="label">Github</span>
@@ -20,8 +25,8 @@ function Projects() {
     };
 
     return(
-        <div className="work-item">
-            <ul className="actions small">
+        <div>
+            <ul className="actions">
                 {renderProjects(ProjectFiles)}
             </ul>
         </div>
