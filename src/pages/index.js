@@ -19,11 +19,12 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <h2>
-              This is text head.
+              Hello, I'm Joe!
             </h2>
           </header>
           <p>
-            This is text body.
+            I'm a web developer based in Seattle, WA. <strong>I'm currently seeking my first opportunity</strong> to begin my career in tech.
+            My strengths include <strong>communication, adaptability, and  critical thinking</strong>. 
           </p>
           <ul className="actions">
             <li>
@@ -46,6 +47,20 @@ const HomeIndex = () => {
               </a>
             </li>
           </ul>
+        </section>
+
+        <section id="three">
+          <h2>Get In Touch</h2>
+            <div className="4u 12u$(small)">
+              <ul className="labeled-icons">
+                <li>
+                  <h3 className="icon fa-envelope-o">
+                    <span className="label">Email</span>
+                  </h3>
+                  <a href="#">joeavilacodes@gmail.com</a>
+                </li>
+              </ul>
+            </div>
         </section>
       </div>
     </Layout>
