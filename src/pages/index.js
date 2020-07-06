@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Projects from '../components/Projects/Projects'
 import Resume from '../assets/images/07-20resume.pdf';
-import Portfolio from '../assets/images/thumbs/portfolio-thumb.webp';
+import Portfolio from '../assets/images/thumbs/porfolio-thumb.webp';
 
 const HomeIndex = () => {
   const siteTitle = 'Joe Avila || Web Dev'
