@@ -1,4 +1,5 @@
-import tetThumb from '../../assets/images/thumbs/tet-thumbnail.png'
+import tetThumb from '../../assets/images/thumbs/tet-thumbnail.png';
+import newsThumb from '../../assets/images/thumbs/news-flash-thumb.png';
 
 const ProjectFiles = [
     {
@@ -10,7 +11,8 @@ const ProjectFiles = [
     },
     {
         name: 'News Flash',
-        thumbnail: '', 
+        thumbnail: newsThumb,
+        description: 'News aggregator built using React, Redux and Rails.', 
         repo: 'https://github.com/javila35/News-Flash-Frontend',
         link: 'https://news-flash-50a6e.web.app/'
     }

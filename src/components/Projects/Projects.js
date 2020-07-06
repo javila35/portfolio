@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectFiles from './ProjFiles';
+import ProjectFiles from './ProjectFiles';
 
 function Projects() {
 
@@ -7,20 +7,20 @@ function Projects() {
         return projectsArray.map((proj, index) => {
             const {description, link, name, repo, thumbnail} = proj;
             return (
-                <li key="index" className="work-item">
+                <li key={index} className="work-item">
                     <img src={thumbnail} className="image" alt={`${name} thumbnail`}></img>
                     <h3>
-                        <a href={link} target="_blank">
+                        <a href={link} rel="noreferrer" target="_blank">
                             {name}
                         </a>
                     </h3>
                     <p>{description}</p>
                     <br/>
-                    <a href={repo} className="icon fa-github" target="_blank">
+                    <a href={repo} className="icon fa-github" target="_blank" rel="noreferrer">
                         <span className="label">Github</span>
                     </a>
                 </li>
-            )
+            );
         });
     };
 
@@ -30,7 +30,7 @@ function Projects() {
                 {renderProjects(ProjectFiles)}
             </ul>
         </div>
-    )
+    );
 };
 
 export default Projects;

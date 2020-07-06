@@ -36,13 +36,6 @@ const HomeIndex = () => {
         <section id="two">
           <h1>Projects</h1>
           <Projects />
-          <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Full Portfolio
-              </a>
-            </li>
-          </ul>
         </section>
 
         <section id="three">
@@ -53,7 +46,7 @@ const HomeIndex = () => {
                   <h3 className="icon fa-envelope-o">
                     <span className="label">Email</span>
                   </h3>
-                  <a href="#">joeavilacodes@gmail.com</a>
+                  <a href="mailto:joeavilacodes@gmail.com">joeavilacodes@gmail.com</a>
                 </li>
               </ul>
             </div>

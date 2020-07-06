@@ -5,7 +5,7 @@
   "author": "Joe Avila",
   "dependencies": {
     "gatsby": "^2.20.12",
-    "gatsby-cli": "^2.12.54",
+    "gatsby-cli": "^2.12.58",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
