@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Projects from '../components/Projects/Projects'
+import Resume from '../assets/images/07-20resume.pdf';
 
 const HomeIndex = () => {
   const siteTitle = 'Joe Avila || Web Dev'
@@ -47,6 +48,12 @@ const HomeIndex = () => {
                     <span className="label">Email</span>
                   </h3>
                   <a href="mailto:joeavilacodes@gmail.com">joeavilacodes@gmail.com</a>
+                </li>
+                <li>
+                  <h3 className="icon fa-file">
+                    <span className="label">Resume</span>
+                  </h3>
+                  <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
                 </li>
               </ul>
             </div>
