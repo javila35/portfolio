@@ -16,7 +16,7 @@ const HomeIndex = () => {
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
         <meta name="author" content="Joseph Avila" />
-        <meta property="og:image" content={Portfolio} />
+        <meta name="image" property="og:image" content={Portfolio} />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
