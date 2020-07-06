@@ -7,7 +7,7 @@ import Portfolio from '../assets/images/thumbs/portfolio-thumb.webp';
 
 const HomeIndex = () => {
   const siteTitle = 'Joe Avila || Web Dev'
-  const siteDescription = 'Web Developer portfolio for Joe Avila.'
+  const siteDescription = 'Portfolio website for Joseph Avila. Titles include: Full Stack Developer, Web Developer, Front End Developer, Back end Developer.'
 
   return (
     <Layout>
