@@ -10,7 +10,7 @@ function Projects() {
                 <li key={index} className="work-item">
                     <img src={thumbnail} className="image" alt={`${name} thumbnail`}></img>
                     <h3>
-                        <a href={link} rel="noreferrer" target="_blank">
+                        <a href={link} rel="noreferrer" target="_blank" aria-label="Project Github Repository">
                             {name}
                         </a>
                     </h3>
