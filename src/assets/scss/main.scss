@@ -78,8 +78,8 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
-		font-weight: _font(weight-bold);
+		color: black;
+		text-decoration: underline;
 	}
 
 	em, i {
@@ -88,10 +88,11 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		color: black;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: black;
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -695,7 +696,7 @@
 				}
 
 				a {
-					color: inherit;
+					color: black;
 				}
 
 				h3 {
@@ -903,7 +904,7 @@
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(accent2, bg);
 		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.png');
+		background-image:		url('images/overlay.png'),			url('../images/bg.webp');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto;

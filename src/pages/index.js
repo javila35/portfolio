@@ -13,6 +13,7 @@ const HomeIndex = () => {
       <Helmet>
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
+        
       </Helmet>
 
       <div id="main">
