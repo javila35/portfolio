@@ -14,8 +14,11 @@ const HomeIndex = () => {
       <Helmet>
         <html lang="en" />
         <title>{siteTitle}</title>
-        <meta name="description" content={siteDescription} />
-        <meta name="author" content="Joseph Avila" />
+        <meta name="description" property="og:description" content={siteDescription} />
+        <meta name="author" property="og:author" content="Joseph Avila" />
+        <meta property="og:url" content="https://www.joeavila.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Joe Avila's Portfolio" />
         <meta name="image" property="og:image" content={Portfolio} />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1200" />
