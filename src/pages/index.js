@@ -44,6 +44,13 @@ const HomeIndex = () => {
             My diverse work history has given me the ability to quickly adapt to changing needs. Whether it's a customer changing their mind on an order,
             or an operation system being updated on the fly I am quick to change habits.
           </p>
+          <ul className="actions">
+            <li>
+              <a href="/cloud" className="button special">
+                See what I've been working on
+              </a>
+            </li>
+          </ul>
         </section>
 
         <section id="two">
