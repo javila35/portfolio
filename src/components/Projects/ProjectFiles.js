@@ -1,5 +1,5 @@
-import tetThumb from '../../assets/images/thumbs/tet-thumbnail.webp';
-import newsThumb from '../../assets/images/thumbs/news-flash-thumb.webp';
+import tetThumb from '../../assets/images/thumbs/tet-thumbnail.png';
+import newsThumb from '../../assets/images/thumbs/news-flash-thumb.png';
 
 const ProjectFiles = [
     {

@@ -3,28 +3,13 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Projects from '../components/Projects/Projects'
 import Resume from '../assets/images/07-20resume.pdf';
-import Portfolio from '../assets/images/thumbs/portfolio-thumb.webp';
 
 const HomeIndex = () => {
-  const siteTitle = 'Joe Avila || Web Dev'
-  const siteDescription = 'Portfolio website for Joseph Avila. Titles include: Full Stack Developer, Web Developer, Front End Developer, Back end Developer.'
-
   return (
     <Layout>
       <Helmet>
         <html lang="en" />
-        <title>{siteTitle}</title>
-        <meta name="description" property="og:description" content={siteDescription} />
-        <meta name="author" property="og:author" content="Joseph Avila" />
-        <meta property="og:url" content="https://www.joeavila.dev" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Joe Avila's Portfolio" />
-        <meta name="image" property="og:image" content={Portfolio} />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Thumbnail of Joseph Avila's portfolio website." />
-        
+        <title>'Joe Avila || Web Dev'</title>
       </Helmet>
 
       <div id="main">
