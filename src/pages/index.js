@@ -9,7 +9,7 @@ const HomeIndex = () => {
     <Layout>
       <Helmet>
         <html lang="en" />
-        <title>'Joe Avila || Web Dev'</title>
+        <title>Joe Avila || Web Dev</title>
       </Helmet>
 
       <div id="main">
@@ -25,9 +25,12 @@ const HomeIndex = () => {
             <br/>
             <br/>
             I work well in a team environment where I get to practice my listening skills and engage in thoughtful conversation.
-            In leadership roles my priority is to understand the strengths and goals of individual members to better place them in positions to challenge their growth.
-            My diverse work history has given me the ability to quickly adapt to changing needs. Whether it's a customer changing their mind on an order,
-            or an operation system being updated on the fly I am quick to change habits.
+            In leadership roles my priority is to understand the strengths and 
+            goals of individual members to create an environment where everyone is challenged and allowed to succeed.
+            My diverse work history has given me the ability to quickly adapt to changing needs whether it's a customer changing their mind on an order,
+            or an operation system being updated on the fly.
+            I have a passion for connecting the dots between teams and individuals, and can use my critical thinking to identify high priority
+            issues that require a sense of urgency. 
           </p>
           <ul className="actions">
             <li>
