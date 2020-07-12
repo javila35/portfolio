@@ -28,7 +28,7 @@ const WordCloud = () => {
             <ReactWordcloud words={words} options={{
                 rotations: 2,
                 rotationAngles: [0, 90],
-                fontSizes: [40, 80],
+                fontSizes: [40, 100],
                 padding: 0,
                 enableTooltip: false
             }}/>}
