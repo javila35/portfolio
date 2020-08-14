@@ -10,10 +10,8 @@ const Header = () => (
       </a>
       <h1>
         <strong>Joe Avila</strong>
-        <br />
-        <br />
-        Web Developer
       </h1>
+      <h3>Web Developer</h3>
     </div>
     <Footer />
   </header>
