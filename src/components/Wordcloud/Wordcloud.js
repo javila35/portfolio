@@ -9,8 +9,7 @@ const GSheetReader = require('g-sheets-api');
 
 const WordCloud = () => {
     const [words, setWords] = useState([{}]);
-    const initialLoad = false;
-    const [load, setLoad] = useState(initialLoad);
+    const [load, setLoad] = useState(false);
 
     // Use GSheetReader as an "API call" to spreadsheet on load.
     useEffect(() =>{

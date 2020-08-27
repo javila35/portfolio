@@ -1,8 +1,7 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
-import Projects from '../components/Projects/Projects'
-import Resume from '../assets/images/07-20resume.pdf';
+import React from 'react';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import Projects from '../components/Projects/Projects';
 
 const HomeIndex = () => {
   return (
@@ -32,13 +31,6 @@ const HomeIndex = () => {
             I have a passion for connecting the dots between teams and individuals, and can use my critical thinking to identify high priority
             issues that require a sense of urgency. 
           </p>
-          <ul className="actions">
-            <li>
-              <a href="/cloud" className="button special">
-                See what I've been working on
-              </a>
-            </li>
-          </ul>
         </section>
 
         <section id="two">
@@ -55,12 +47,6 @@ const HomeIndex = () => {
                     <span className="label">Email</span>
                   </h3>
                   <a href="mailto:joeavilacodes@gmail.com">joeavilacodes@gmail.com</a>
-                </li>
-                <li>
-                  <h3 className="icon fa-file">
-                    <span className="label">Resume</span>
-                  </h3>
-                  <a href={Resume} target="_blank" rel="noreferrer">Resume</a>
                 </li>
               </ul>
             </div>
