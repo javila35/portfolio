@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Resume from '../assets/images/07-20resume.pdf';
 
 const Footer = () => (
   <div id="footer">
@@ -15,13 +16,13 @@ const Footer = () => (
           </a>
         </li>
         <li>
-          <a href="https://dev.to/javila35" className="icon fa-book" target="_blank" rel="noreferrer" aria-label="Blog">
-            <span className="label">Blog</span>
+          <a href="https://leetcode.com/javila35/" className="icon fa-code" target="_blank" rel="noreferrer" aria-label="Leetcode">
+            <span className="label">Leetcode</span>
           </a>
         </li>
         <li>
-          <a href="https://leetcode.com/javila35/" className="icon fa-code" target="_blank" rel="noreferrer" aria-label="Leetcode">
-            <span className="label">Leetcode</span>
+          <a href={Resume} target="_blank" rel="noreferrer" aria-label="Resume" className="icon fa-file">
+            <span className="label">Resume</span>
           </a>
         </li>
       </ul>
