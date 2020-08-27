@@ -5,7 +5,7 @@ const BlogCard = ({ post }) => {
 
     return (
         <article className="work-item" style={{textAlign: "center"}}>
-            {social_image !== "" ? <a href={`${url}`}><img src={`${social_image}`} target="_blank" rel="noreferrer" alt="Title provided by dev.to" className="image" style={{maxWidth: "90%"}} /></a> : null}
+            {social_image !== "" ? <a href={`${url}`} target="_blank" rel="noreferrer"><img src={`${social_image}`} alt="Title provided by dev.to" className="image" style={{maxWidth: "90%"}} /></a> : null}
             <h1><a href={`${url}`} target="_blank" rel="noreferrer">{title}</a></h1>
             <h3>Posted on {readable_publish_date}</h3>
             <h6><em>{tags}</em></h6>
