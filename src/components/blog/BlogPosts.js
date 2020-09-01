@@ -5,26 +5,26 @@ import { graphql, useStaticQuery } from 'gatsby';
 const BlogPosts = () => {
     const queryData = useStaticQuery(graphql`
     {
-      allDevArticles {
-        edges {
-          node {
-            article {
-              id
-              social_image
-              title
-              url
-              readable_publish_date
+        allDevArticles {
+            edges {
+                node {
+                    article {
+                        id
+                        social_image
+                        title
+                        url
+                        readable_publish_date
+                    }
+                }
             }
-          }
         }
-      }
     }
   `);
 
     const [allPosts, setPosts] = useState(queryData.allDevArticles.edges);
 
     useEffect(() => {
-        fetch('http://localhost:8000/___graphql/', {
+        fetch('https://www.joeavila.dev/___graphql/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
