@@ -947,6 +947,13 @@
 			width: 6.25em;
 			mix-blend-mode: overlay;
 		}
+		
+		ul#headerList {
+			list-style-type: none;
+			> li a {
+				color: #74ffd3;
+			}
+		}
 	}
 
 /* Footer */

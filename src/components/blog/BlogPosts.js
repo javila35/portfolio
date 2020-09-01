@@ -1,29 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import BlogCard from './BlogCard';
 import { graphql, useStaticQuery } from 'gatsby';
 
-const BlogPosts = () => {
-    const queryData = useStaticQuery(graphql`
-    {
-        allDevArticles {
-            edges {
-                node {
-                    article {
-                        id
-                        social_image
-                        title
-                        url
-                        readable_publish_date
-                    }
-                }
-            }
-        }
-    }
-  `);
+/* 
+, { useState, useEffect }
+const [allPosts, setPosts] = useState(queryData.allDevArticles.edges)
 
-    const [allPosts, setPosts] = useState(queryData.allDevArticles.edges);
-
-    useEffect(() => {
+useEffect(() => {
         fetch('https://www.joeavila.dev/___graphql/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -59,6 +42,29 @@ const BlogPosts = () => {
         };
         return false;
     }
+
+*/
+
+const BlogPosts = () => {
+    const queryData = useStaticQuery(graphql`
+    {
+        allDevArticles {
+            edges {
+                node {
+                    article {
+                        id
+                        social_image
+                        title
+                        url
+                        readable_publish_date
+                    }
+                }
+            }
+        }
+    }
+  `);
+
+    const allPosts = queryData.allDevArticles.edges;
 
     const renderPosts = () => {
         return allPosts.map((post, index) => {
