@@ -1,22 +1,74 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import BlogCard from './BlogCard';
+import { graphql, useStaticQuery } from 'gatsby';
+
+/* 
+, { useState, useEffect }
+const [allPosts, setPosts] = useState(queryData.allDevArticles.edges)
+
+useEffect(() => {
+        fetch('https://www.joeavila.dev/___graphql/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                query: `{
+                    allDevArticles {
+                        edges {
+                            node {
+                                article {
+                                    id
+                                    social_image
+                                    title
+                                    url
+                                    readable_publish_date
+                                }
+                            }
+                        }
+                    }
+                }`
+            })
+        })
+        .then(res => res.json())
+        .then(res => {
+            if (checkNewPosts(res.data.allDevArticles.edges)) {
+                setPosts(res.data.allDevArticles.edges)
+            }
+        })
+    })
+
+    const checkNewPosts = (data) => {
+        if (allPosts.length !== data.length) {
+            return true
+        };
+        return false;
+    }
+
+*/
 
 const BlogPosts = () => {
-    const [allPosts, setPosts] = useState(false);
-
-    useEffect(()=>{
-        if (!allPosts) {
-            fetch('https://dev.to/api/articles?username=javila35')
-            .then(data => data.json())
-            .then(data => {
-                setPosts(data);
-            })
+    const queryData = useStaticQuery(graphql`
+    {
+        allDevArticles {
+            edges {
+                node {
+                    article {
+                        id
+                        social_image
+                        title
+                        url
+                        readable_publish_date
+                    }
+                }
+            }
         }
-    }, [allPosts])
+    }
+  `);
+
+    const allPosts = queryData.allDevArticles.edges;
 
     const renderPosts = () => {
         return allPosts.map((post, index) => {
-            return <BlogCard key={index} post={post} />
+            return <BlogCard key={index} post={post.node.article} />
         })
     }
 

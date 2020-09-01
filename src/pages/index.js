@@ -14,9 +14,9 @@ const HomeIndex = () => {
       <div id="main">
         <section id="one">
           <header className="major">
-            <h2>
+            <h1>
               Hello, I'm Joe!
-            </h2>
+            </h1>
           </header>
           <p>
             I'm a web developer based in Seattle, WA. <strong>I'm currently seeking my first opportunity</strong> to begin my career in tech.
