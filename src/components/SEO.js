@@ -28,7 +28,7 @@ const SEO = ({ title }) => {
     <Helmet title={seo.title}>
       <html lang="en" />
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
+      <meta name="og:image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
