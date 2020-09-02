@@ -1,15 +1,14 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Projects from '../components/Projects/Projects';
+import SEO from '../components/SEO';
 
 const HomeIndex = () => {
   return (
     <Layout>
-      <Helmet>
-        <html lang="en" />
-        <title>Joe Avila || Web Dev</title>
-      </Helmet>
+      <SEO 
+        title="Joe Avila || Web Developer"
+      />
 
       <div id="main">
         <section id="one">

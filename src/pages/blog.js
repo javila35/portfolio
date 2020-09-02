@@ -1,15 +1,14 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Helmet from 'react-helmet';
+import SEO from '../components/SEO'
 import BlogPosts from '../components/blog/BlogPosts';
 
 const Blog = () => {
     return (
         <Layout>
-            <Helmet>
-            <html lang="en" />
-                <title>Joe Avila || Blog Posts</title>
-            </Helmet>
+            <SEO
+                title="Joe Avila || Blog Posts"
+            />
             <div id="main">
                 <BlogPosts />
             </div>
