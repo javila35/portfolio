@@ -3,9 +3,10 @@ module.exports = {
     title: 'Portfolio',
     author: 'Joe Avila',
     description: 'Portfolio website for Joseph Avila. Titles include: Full Stack Developer, Web Developer, Front End Developer, Back end Developer.',
-    siteUrl: `https://www.joeavila.dev`,
+    url: `https://www.joeavila.dev`,
     author: `Joseph Avila`,
-    type: `Website`
+    type: `Website`,
+    twitterUsername: `coderjoe206`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

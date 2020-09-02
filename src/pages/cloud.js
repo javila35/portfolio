@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Helmet from 'react-helmet';
+import SEO from '../components/SEO';
 import Wordcloud from '../components/Wordcloud/Wordcloud';
 
 const Cloud = () => {
     return (
         <Layout>
-            <Helmet>
-                <html lang="en" />
-                <title>Joe Avila || Wordcloud</title>
-            </Helmet>
+            <SEO 
+                title="Joe Avila || Wordcloud"
+            />
+            
             <div id="main">
                 <section id="one">
                     <header className="major">
