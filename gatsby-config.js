@@ -3,11 +3,11 @@ module.exports = {
     title: 'Joe Avila || Portfolio',
     author: 'Joe Avila',
     description: 'Full Stack develoepr portfolio for Joe Avila.',
-    url: `https://www.joeavila.dev`,
+    url: `https://www.joeavila.dev/`,
     author: `Joseph Avila`,
     type: `Website`,
     twitterUsername: `coderjoe206`,
-    image: '/src/assets/images/ogImage.png'
+    image: 'src/assets/images/ogImage.png'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
