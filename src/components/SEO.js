@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
+import ogImage from '../assets/images/ogImage.png';
 
 
 const SEO = ({ title }) => {
@@ -15,7 +16,6 @@ const SEO = ({ title }) => {
     description,
     siteUrl,
     twitterUsername,
-    image
   } = site.siteMetadata;
 
   const seo = {
@@ -29,9 +29,9 @@ const SEO = ({ title }) => {
       <html lang="en" />
       <meta name="description" content={seo.description} />
       <meta name="author" content={author} />
-      <meta name="image" content={`${siteUrl}${image}`} />
+      <meta name="image" content={`${siteUrl}${ogImage}`} />
       <meta property="og:image:type" content="image/png" /> 
-      <meta property="og:image" content={`${siteUrl}${image}`} />
+      <meta property="og:image" content={`${siteUrl}${ogImage}`} />
       <meta property="og:image:width" content="1200" /> 
       <meta property="og:image:height" content="630" />
       {seo.url && <meta property="og:url" content={siteUrl} />}
@@ -77,7 +77,6 @@ const query = graphql`
         description
         siteUrl: url
         twitterUsername
-        image
       }
     }
   }

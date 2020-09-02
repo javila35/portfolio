@@ -2,12 +2,11 @@ module.exports = {
   siteMetadata: {
     title: 'Joe Avila || Portfolio',
     author: 'Joe Avila',
-    description: 'Full Stack develoepr portfolio for Joe Avila.',
+    description: 'Full Stack developer portfolio for Joe Avila.',
     url: `https://www.joeavila.dev/`,
     author: `Joseph Avila`,
     type: `Website`,
-    twitterUsername: `coderjoe206`,
-    image: 'src/assets/images/ogImage.png'
+    twitterUsername: `coderjoe206`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
