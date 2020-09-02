@@ -31,7 +31,7 @@ const SEO = ({ title }) => {
       <meta name="author" content={author} />
       <meta name="image" content={`${seo.siteUrl}${image}`} />
       <meta property="og:image:type" content="image/png" /> 
-      <meta property="og:image" content={`${siteUrl}${image}`} />
+      <meta property="og:image" content={`${seo.siteUrl}${image}`} />
       <meta property="og:image:width" content="1200" /> 
       <meta property="og:image:height" content="630" />
       {seo.url && <meta property="og:url" content={seo.siteUrl} />}
