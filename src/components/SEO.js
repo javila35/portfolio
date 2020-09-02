@@ -31,6 +31,7 @@ const SEO = ({ title }) => {
       <meta name="author" content={author} />
       <meta name="image" content={`${siteUrl}${image}`} />
       <meta property="og:image:type" content="image/png" /> 
+      <meta property="og:image" content={`${siteUrl}${image}`} />
       <meta property="og:image:width" content="1200" /> 
       <meta property="og:image:height" content="630" />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -38,7 +39,6 @@ const SEO = ({ title }) => {
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
-      <meta property="og:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
       {twitterUsername && (
         <meta name="twitter:creator" content={twitterUsername} />
