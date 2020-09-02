@@ -1,8 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useLocation } from "@reach/router"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useLocation } from "@reach/router";
+import { useStaticQuery, graphql } from "gatsby";
+import image from '../assets/images/ogImage.png';
 
 
 const SEO = ({ title }) => {
@@ -14,8 +15,7 @@ const SEO = ({ title }) => {
     author,
     description,
     siteUrl,
-    twitterUsername,
-    image
+    twitterUsername
   } = site.siteMetadata;
 
   const seo = {
@@ -73,7 +73,6 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
-        image
         author
         description
         siteUrl: url
