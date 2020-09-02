@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-import ogImage from '../assets/images/ogImage.png';
 
 
 const SEO = ({ title }) => {
@@ -16,13 +15,13 @@ const SEO = ({ title }) => {
     description,
     siteUrl,
     twitterUsername,
+    image
   } = site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
     description,
-    url: `${siteUrl}${pathname}`,
-    image: ogImage
+    url: `${siteUrl}${pathname}`
   }
 
   return (
@@ -30,12 +29,16 @@ const SEO = ({ title }) => {
       <html lang="en" />
       <meta name="description" content={seo.description} />
       <meta name="author" content={author} />
+      <meta name="image" content={`${siteUrl}${image}`} />
+      <meta property="og:image:type" content="image/png" /> 
+      <meta property="og:image:width" content="1200" /> 
+      <meta property="og:image:height" content="630" />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
-      {seo.image && <meta property="og:image" content={seo.image} />}
+      <meta property="og:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
       {twitterUsername && (
         <meta name="twitter:creator" content={twitterUsername} />
@@ -70,6 +73,7 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
+        image
         author
         description
         siteUrl: url
