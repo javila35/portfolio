@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Portfolio',
+    title: 'Joe Avila || Portfolio',
     author: 'Joe Avila',
-    description: 'Portfolio website for Joseph Avila. Titles include: Full Stack Developer, Web Developer, Front End Developer, Back end Developer.',
+    description: 'Full Stack develoepr portfolio for Joe Avila.',
     url: `https://www.joeavila.dev`,
     author: `Joseph Avila`,
     type: `Website`,
