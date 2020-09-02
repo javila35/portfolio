@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-import image from '../assets/images/ogImage.png';
+import ogImage from '../assets/images/ogImage.png';
 
 
 const SEO = ({ title }) => {
@@ -21,14 +21,14 @@ const SEO = ({ title }) => {
     title: title || defaultTitle,
     description: defaultDescription,
     url: `${siteUrl}${pathname}`,
-    image: image
+    image: ogImage
   }
 
   return (
     <Helmet title={seo.title}>
       <html lang="en" />
       <meta name="description" content={seo.description} />
-      <meta name="og:image" content={seo.image} />
+      <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
