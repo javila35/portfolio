@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
+import Helmet from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 import ogImage from '../assets/images/ogImage.png';
@@ -26,27 +26,25 @@ const SEO = ({ title }) => {
 
   return (
     <Helmet title={seo.title}>
+      {/* General Tags */}
       <html lang="en" />
       <meta name="description" content={seo.description} />
       <meta name="author" content={author} />
       <meta name="image" content={`${siteUrl}${ogImage}`} />
-      <meta property="og:image:type" content="image/png" /> 
+      
+      {/* Open Graph Tags */}
       <meta property="og:image" content={`${siteUrl}${ogImage}`} />
       <meta property="og:image:width" content="1200" /> 
       <meta property="og:image:height" content="630" />
-      {seo.url && <meta property="og:url" content={siteUrl} />}
-      {seo.title && <meta property="og:title" content={seo.title} />}
-      {seo.description && (
-        <meta property="og:description" content={seo.description} />
-      )}
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
+
+      {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      {twitterUsername && (
-        <meta name="twitter:creator" content={twitterUsername} />
-      )}
-      {seo.title && <meta name="twitter:title" content={seo.title} />}
-      {seo.description && (
-        <meta name="twitter:description" content={seo.description} />
-      )}
+      <meta name="twitter:creator" content={twitterUsername} />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
     </Helmet>
   )
 };
