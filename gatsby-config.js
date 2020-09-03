@@ -6,7 +6,7 @@ module.exports = {
     url: `https://www.joeavila.dev/`,
     author: `Joseph Avila`,
     type: `Website`,
-    twitterUsername: `coderjoe206`
+    twitterUsername: `@coderjoe206`
   },
   plugins: [
     'gatsby-plugin-react-helmet',

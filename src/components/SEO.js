@@ -16,6 +16,7 @@ const SEO = ({ title }) => {
     description,
     siteUrl,
     twitterUsername,
+    type
   } = site.siteMetadata;
 
   const seo = {
@@ -33,6 +34,7 @@ const SEO = ({ title }) => {
       <meta name="image" content={`${siteUrl}${ogImage}`} />
       
       {/* Open Graph Tags */}
+      <meta property="og:type" content={type} />
       <meta property="og:image" content={`${siteUrl}${ogImage}`} />
       <meta property="og:image:width" content="1200" /> 
       <meta property="og:image:height" content="630" />
@@ -41,11 +43,12 @@ const SEO = ({ title }) => {
       <meta property="og:description" content={seo.description} />
 
       {/* Twitter Card Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={twitterUsername} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content={twitterUsername} />
       <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
       <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+      <meta name="twitter:image:alt" content={description} />
     </Helmet>
   )
 };
@@ -76,6 +79,7 @@ const query = graphql`
         description
         siteUrl: url
         twitterUsername
+        type
       }
     }
   }
