@@ -3,7 +3,7 @@ module.exports = {
     title: 'Joe Avila || Portfolio',
     author: 'Joe Avila',
     description: 'Full Stack developer portfolio for Joe Avila.',
-    url: `https://www.joeavila.dev/`,
+    url: `https://www.joeavila.dev`,
     author: `Joseph Avila`,
     type: `Website`,
     twitterUsername: `@coderjoe206`
