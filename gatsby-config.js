@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Joe Avila || Portfolio',
     author: 'Joe Avila',
-    description: 'Full Stack developer portfolio for Joe Avila.',
+    description: 'Full Stack developer portfolio for Joseph Avila.',
     url: `https://www.joeavila.dev`,
     author: `Joseph Avila`,
     type: `Website`,
