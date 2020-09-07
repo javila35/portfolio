@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import BlogCard from './BlogCard';
 import { graphql, useStaticQuery } from 'gatsby';
 
-const BlogPosts = () => {
+const BlogPosts = ({ newPosts }) => {
     const queryData = useStaticQuery(graphql`
     {
         allDevArticles {
@@ -21,7 +21,11 @@ const BlogPosts = () => {
     }
   `);
 
-  const allPosts = queryData.allDevArticles.edges;
+  const [allPosts, setAllPosts] = useState(queryData.allDevArticles.edges);
+
+  useEffect(() => {
+      setAllPosts(newPosts)
+  }, [setAllPosts, newPosts])
 
     const renderPosts = () => {
         return allPosts.map((post, index) => {
