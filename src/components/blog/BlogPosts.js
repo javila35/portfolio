@@ -4,21 +4,21 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const BlogPosts = ({ newPosts }) => {
     const queryData = useStaticQuery(graphql`
-    {
+    query MyQuery {
         allDevArticles {
-            edges {
-                node {
-                    article {
-                        id
-                        social_image
-                        title
-                        url
-                        readable_publish_date
-                    }
-                }
+          edges {
+            node {
+              article {
+                id
+                social_image
+                title
+                url
+                readable_publish_date
+              }
             }
+          }
         }
-    }
+      }      
   `);
 
   const [allPosts, setAllPosts] = useState(queryData.allDevArticles.edges);
