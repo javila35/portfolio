@@ -18,21 +18,23 @@ const Blog = ({ data }) => {
 };
 
 // Export query here.
-export const query = graphql`{
+export const devQuery = graphql`
+query blogPageQuery {
     allDevArticles {
-        edges {
-            node {
-                article {
-                    id
-                    social_image
-                    title
-                    url
-                    readable_publish_date
-                }
-            }
+      edges {
+        node {
+          article {
+            id
+            social_image
+            title
+            url
+            readable_publish_date
+          }
         }
+      }
     }
-}
+  }
+  
 `
 // Pass data prop down to blogposts
 
