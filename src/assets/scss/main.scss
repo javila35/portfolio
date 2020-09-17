@@ -883,8 +883,17 @@
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 		}
 
+		h1 {
+			font-size: 2em;
+			margin: 0 0 (_size(element-margin) * 0.25) 0;
+		}
+
 		h3 {
 			font-size: 1em;
+			margin: 0 0 (_size(element-margin) * 0.25) 0;
+		}
+
+		h6 {
 			margin: 0 0 (_size(element-margin) * 0.25) 0;
 		}
 
@@ -893,6 +902,11 @@
 			line-height: 1.5em;
 			margin: 0;
 		}
+		
+		a {
+			border-bottom: none;
+		}
+		
 	}
 
 /* Header */

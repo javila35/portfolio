@@ -1,31 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import BlogCard from './BlogCard';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const BlogPosts = ({ newPosts }) => {
     const queryData = useStaticQuery(graphql`
-    query MyQuery {
-        allDevArticles {
-          edges {
-            node {
-              article {
-                id
-                social_image
-                title
-                url
-                readable_publish_date
-              }
+    {
+      allDevArticles {
+        edges {
+          node {
+            article {
+              id
+              social_image
+              title
+              url
+              readable_publish_date
+              tag_list
             }
           }
         }
-      }      
+      }
+    }    
   `);
 
-  const [allPosts, setAllPosts] = useState(queryData.allDevArticles.edges);
-
-  useEffect(() => {
-      setAllPosts(newPosts)
-  }, [setAllPosts, newPosts])
+  const allPosts = queryData.allDevArticles.edges;
 
     const renderPosts = () => {
         return allPosts.map((post, index) => {
@@ -36,7 +33,7 @@ const BlogPosts = ({ newPosts }) => {
     return (
         <section id="one">
             <div className="row">
-                {allPosts ? renderPosts() : <p>Loading</p>}
+                {renderPosts()}
             </div>
         </section>
 )
