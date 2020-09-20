@@ -2,7 +2,7 @@ import React from 'react';
 import BlogCard from './BlogCard';
 import { graphql, useStaticQuery } from 'gatsby';
 
-const BlogPosts = ({ newPosts }) => {
+const BlogPosts = () => {
     const queryData = useStaticQuery(graphql`
     {
       allDevArticles {
