@@ -18,8 +18,7 @@ const HomeIndex = () => {
             </h1>
           </header>
           <p>
-            I'm a web developer based in Seattle, WA. <strong>I'm currently seeking my first opportunity</strong> to begin my career in tech.
-            My strengths include <strong>communication, adaptability, and  critical thinking</strong>. 
+            I'm a web developer based in Seattle, WA. <strong>I'm currently working with <a href="https://www.collineargroup.com/">Collinear Group</a></strong> as a software engineer.
             <br/>
             <br/>
             I work well in a team environment where I get to practice my listening skills and engage in thoughtful conversation.
