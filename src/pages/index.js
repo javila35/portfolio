@@ -18,16 +18,13 @@ const HomeIndex = () => {
             </h1>
           </header>
           <p>
-            I'm a web developer based in Seattle, WA. <strong>I'm currently working with <a href="https://www.collineargroup.com/">Collinear Group</a></strong> as a software engineer.
+            I'm a web developer based in Seattle, WA. I'm currently working with <a href="https://www.collineargroup.com/">Collinear Group</a> as a full stack software engineer.
             <br/>
             <br/>
             I work well in a team environment where I get to practice my listening skills and engage in thoughtful conversation.
-            In leadership roles my priority is to understand the strengths and 
-            goals of individual members to create an environment where everyone is challenged and allowed to succeed.
-            My diverse work history has given me the ability to quickly adapt to changing needs whether it's a customer changing their mind on an order,
-            or an operation system being updated on the fly.
-            I have a passion for connecting the dots between teams and individuals, and can use my critical thinking to identify high priority
-            issues that require a sense of urgency. 
+            In leadership roles my priority is to understand the strengths and goals of individual members to create an environment where everyone is challenged and positioned to succeed.
+            My diverse work history has given me the ability to quickly adapt to change whether it's a customer changing their mind or an operation system being updated on the fly.
+            I have a passion for connecting the dots between teams and individuals, and can use my critical thinking to identify high priority issues that require a sense of urgency. 
           </p>
         </section>
 
