@@ -7,8 +7,8 @@ function Projects() {
         return projectsArray.map((proj, index) => {
             const {description, link, name, repo, thumbnail} = proj;
             return (
-                <li key={index} className="work-item">
-                    <img src={thumbnail} className="image" alt={`${name} thumbnail`}></img>
+                <li key={index}>
+                    <img src={thumbnail} alt={`${name} thumbnail`}></img>
                     <h3>
                         <a href={link} rel="noreferrer" target="_blank" >
                             {name}
@@ -16,8 +16,8 @@ function Projects() {
                     </h3>
                     <p>{description}</p>
                     <br/>
-                    <a href={repo} className="icon fa-github" target="_blank" rel="noreferrer" aria-label="Project Github Repository">
-                        <span className="label">Github</span>
+                    <a href={repo} target="_blank" rel="noreferrer" aria-label="Project Github Repository">
+                        <span>Github</span>
                     </a>
                 </li>
             );
@@ -26,7 +26,7 @@ function Projects() {
 
     return(
         <div>
-            <ul className="actions">
+            <ul>
                 {renderProjects(ProjectFiles)}
             </ul>
         </div>

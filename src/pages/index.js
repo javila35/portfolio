@@ -10,9 +10,9 @@ const HomeIndex = () => {
         title="Joe Avila || Web Developer"
       />
 
-      <div id="main">
-        <section id="one">
-          <header className="major">
+      <div>
+        <section>
+          <header>
             <h1>
               Hello, I'm Joe!
             </h1>
@@ -28,18 +28,18 @@ const HomeIndex = () => {
           </p>
         </section>
 
-        <section id="two">
+        <section>
           <h1>Projects</h1>
           <Projects />
         </section>
 
-        <section id="three">
+        <section>
           <h2>Get In Touch</h2>
-            <div className="4u 12u$(small)">
-              <ul className="labeled-icons">
+            <div>
+              <ul>
                 <li>
-                  <h3 className="icon fa-envelope-o">
-                    <span className="label">Email</span>
+                  <h3>
+                    <span>Email</span>
                   </h3>
                   <a href="mailto:joeavilacodes@gmail.com">joeavilacodes@gmail.com</a>
                 </li>

@@ -9,10 +9,9 @@ const Cloud = () => {
             <SEO 
                 title="Joe Avila || Wordcloud"
             />
-            
-            <div id="main">
-                <section id="one">
-                    <header className="major">
+            <div>
+                <section>
+                    <header>
                         <h2>What I've been working on:</h2>
                     </header>
                     <Wordcloud />
