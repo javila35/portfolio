@@ -15,6 +15,8 @@ const Header = () => (
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/cloud">Word Cloud</a></li>
+        <li><a href="/garden">Digital Garden</a></li>
+        <li><a href="/books">Bookshelf</a></li>
       </ul>
     </div>
     <Footer />
