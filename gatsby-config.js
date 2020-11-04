@@ -9,39 +9,12 @@ module.exports = {
     twitterUsername: `@coderjoe206`
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
         name: 'blog'
       }
-    },
-    {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        // Do I need to have all these extensions?
-        extensions: ['.mdx', '.md', '.markdown'],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              backgroundColor: '#fafafa',
-              maxWidth: 1035,
-            },
-          },
-        ],
-      },
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-catch-links',
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: `src/lib/typography`
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -56,6 +29,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
   ],
 }
