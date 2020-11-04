@@ -1,5 +1,7 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+// import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 /* 
 To do:
@@ -9,37 +11,17 @@ Learn to render pages from MD files in a directory
 */
 
 
-const garden = ({ data: { site } }) => {
+const garden = () => {
     return (
-      <div>
-        {site.edges.map(({ node: post }) => (
-          <div key={post.id}>
-            <h2>
-              <a href={post.frontmatter.slug} aria-label={`View ${post.frontmatter.title}`}>
-                {post.frontmatter.title}
-              </a>
-            </h2>
-            <div>
-              {post.excerpt}{' '}
-              <a href={post.frontmatter.slug} aria-label={`View ${post.frontmatter.title}`}>
-              Read Article →
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Layout>
+        <SEO title="Joe Avila || Digital Garden" />
+        <div>
+          <section>
+            <h2>Welcome to my digital garden.</h2>
+          </section>
+        </div>
+      </Layout>
     )
 };
 
 export default garden;
-
-export const pageQuery = graphql`
-  query {
-    site {
-      ...site
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

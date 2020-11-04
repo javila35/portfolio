@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Footer from './Footer'
 import avatar from '../assets/images/avatar.jpg'
 
@@ -12,11 +13,12 @@ const Header = () => (
         <strong>Joe Avila</strong>
       </h1>
       <h2>Web Developer</h2>
+      <h3>Navigation:</h3>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/cloud">Word Cloud</a></li>
-        <li><a href="/garden">Digital Garden</a></li>
-        <li><a href="/books">Bookshelf</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/cloud">Word Cloud</Link></li>
+        <li><Link to="/garden">Digital Garden</Link></li>
+        <li><Link to="/books">Bookshelf</Link></li>
       </ul>
     </div>
     <Footer />
