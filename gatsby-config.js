@@ -3,10 +3,10 @@ module.exports = {
     title: 'Joe Avila || Portfolio',
     author: 'Joe Avila',
     description: 'Full Stack developer portfolio for Joseph Avila.',
-    url: `https://www.joeavila.dev`,
-    author: `Joseph Avila`,
-    type: `Website`,
-    twitterUsername: `@coderjoe206`
+    url: 'https://www.joeavila.dev',
+    author: 'Joseph Avila',
+    type: 'Website',
+    twitterUsername: '@coderjoe206'
   },
   plugins: [
     {
@@ -17,7 +17,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Joe Avila Portfolio',
         short_name: 'portfolio',
@@ -29,7 +29,9 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    `gatsby-plugin-react-helmet`,
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-remark'
   ],
 }
