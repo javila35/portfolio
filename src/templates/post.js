@@ -1,26 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-/* 
- My posts are not being brought in as I would expect.
- markdownRemark: post is returning null.
-*/
-
-export default function Template({ data }) {
-    const { markdownRemark: post } = data
-    
-    return (
-        <div>
-            <article>
-                hi king
-                {console.log(data)}
-                {/* <h1>{post.frontmatter.title}</h1> */}
-                <div
-                //   dangerouslySetInnerHTML={{ __html: post.html }}
-                ></div>
-            </article>
-        </div>
-    )
+export default function( { data } ) {
+  const { markdownRemark: post } = data
+  return (
+    <div>
+      <h1>{post.frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    </div>
+  )
 }
 
 export const pageQuery = graphql`
