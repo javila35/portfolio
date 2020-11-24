@@ -1,8 +1,8 @@
 ---
-path: '/big-skills/'
+path: "/big-skills/"
 date: 2020-11-12
-title: 'Getting hired from a non-tech background'
-description: 'I wI have big skills. ge that?'
+title: "Getting hired from a non-tech background"
+description: "I wI have big skills. ge that?"
 published: false
 banner: null
 ---

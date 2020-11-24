@@ -1,8 +1,8 @@
 ---
-path: '/soft-skills/'
+path: "/soft-skills/"
 date: 2020-11-05
-title: 'Getting hired from a non-tech background'
-description: 'I was a barista up until the day I started working for Collinear. I didn't have stand out projects, and I didn't have experience. How did I manage that?'ß
+title: "Getting hired from a non-tech background"
+description: "I was a barista up until the day I started working for Collinear. I didn't have stand out projects, and I didn't have experience. How did I manage that?"
 ---
 
 I was listening to [this podcast](https://syntax.fm/show/297/hasty-treat-certifications-government-specified-javascript-skills) that talks about a new developers perspective on trying to get a new job. The hosts of the podcasts talked about how certificates weren't as useful as having projects on your resume. 
