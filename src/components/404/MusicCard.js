@@ -4,7 +4,7 @@ const MusicCard = () => {
     const [track, setTrack] = useState(false)
 
     useEffect(() => {
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=crackedteeth&api_key=${process.env.GATSBY_LASTFM}&format=json&limit=1`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=crackedteeth&api_key=${process.env.GATSBY_LASTFM}&format=json&limit=1`)
             .then(data => data.json())
             .then(data => setTrack(data.recenttracks.track[1]))
     })
