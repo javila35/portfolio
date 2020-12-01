@@ -28,6 +28,7 @@ module.exports = {
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
