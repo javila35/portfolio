@@ -1,6 +1,10 @@
+## Styling
+- [ ] Create Light/Dark mode catch
+
 ## Pages
 - [ ] Bookshelf
 - [ ] Articles
 - [ ] Projects
-- [ ] About Me
+- [x] About Me
 - [ ] Custom word cloud?
+- [x] Blog
