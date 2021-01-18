@@ -8,3 +8,6 @@
 - [x] About Me
 - [ ] Custom word cloud?
 - [x] Blog
+
+## Update
+- [ ] Resume
