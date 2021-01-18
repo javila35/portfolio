@@ -2,6 +2,12 @@ body p {
     font-size: 1.5em;
 }
 
+body img {
+    height: 40vh;
+    float: left;
+    margin-right: 30px;
+}
+
 #date-created {
     color:gray;
 }
