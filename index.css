@@ -21,8 +21,28 @@ body img {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: rgb(0,0,0);
-        background: linear-gradient(203deg, rgba(82,5,123,1) 0%, rgba(137,44,220,1) 60%,  rgba(0,0,0,1) 100%);
+        background: #1F2933;
+        color: #F5F7FA;
+    }
+    
+    body a {
+        color: #CBD2D9;
+    }
+    
+    body a:visited {
+        color: #CBD2D9;
+    }
+
+    footer a {
+        color: #F5F7FA;
+    }
+
+    footer a:visited {
+        color: #F5F7FA;
+    }
+
+    footer a:hover {
+        background-color: #616E76;
     }
 }
 
@@ -31,28 +51,27 @@ body img {
         background: rgb(124,224,249);
         background: linear-gradient(166deg, rgba(124,224,249,1) 11%, rgba(221,176,160,1) 80%, rgba(216,108,112,1) 100%);
     }
+    
+    body a:visited {
+        color: black;
+    }
+
+    footer a:visited {
+        color: black;
+    }
+    
+    footer a:hover {
+        background-color: black;
+        color: white;
+    }
 }
 
 #date-created {
     color:gray;
 }
 
-footer {
-    padding-left: 3%;
-}
-
 footer a {
     transition: all 0.5s ease;
-}
-
-footer a:visited {
-    color: black;
-}
-
-footer a:hover {
-    background-color: black;
-    padding: 4px;
-    border-radius: 10px;
-    color: white;
-    font-size: 0.9rem;
+    padding: 4px 4px;
+    border-radius: 4px;
 }

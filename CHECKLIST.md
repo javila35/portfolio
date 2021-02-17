@@ -1,5 +1,5 @@
 ## Styling
-- [ ] Create Light/Dark mode catch
+- [x] Create Light/Dark mode catch
 
 ## Pages
 - [ ] Bookshelf
@@ -7,7 +7,7 @@
 - [ ] Projects
 - [x] About Me
 - [ ] Custom word cloud?
-- [x] Blog
+- [ ] Blog
 
 ## Update
 - [ ] Resume
