@@ -10,11 +10,9 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-    
 }
 
 body img {
-    height: 40vh;
     float: left;
     margin: 30px 30px 0px 30px;
 }
@@ -48,8 +46,9 @@ body img {
 
 @media (prefers-color-scheme: light) {
     body {
-        background: rgb(124,224,249);
-        background: linear-gradient(166deg, rgba(124,224,249,1) 11%, rgba(221,176,160,1) 80%, rgba(216,108,112,1) 100%);
+        background: green;
+        /* background: rgb(124,224,249); */
+        /* background: linear-gradient(166deg, rgba(124,224,249,1) 11%, rgba(221,176,160,1) 80%, rgba(216,108,112,1) 100%); */
     }
     
     body a:visited {
