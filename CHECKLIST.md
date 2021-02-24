@@ -10,4 +10,4 @@
 - [ ] Blog
 
 ## Update
-- [ ] Resume
+- [x] Resume
