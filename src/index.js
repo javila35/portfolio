@@ -1,2 +1,2 @@
-import "./index.css";
-import "./typography.css";
+import "./styles/index.css";
+import "./styles/typography.css";
