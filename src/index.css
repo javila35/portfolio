@@ -4,9 +4,29 @@ body {
     margin: 0;
 }
 
+.left {
+    height: calc(100vh - 30px);
+}
+
 .main {
     margin-top: 30px;
 }
+
+.right {
+    max-width: 90vw;
+}
+
+.icon-bar {
+    text-align: center;
+ }
+ 
+ .icon-bar a {
+        text-decoration: none;
+ }
+
+ em {
+     font-style: normal;
+ }
 
 @media screen and (min-width: 601px) {
     .left {
@@ -23,27 +43,22 @@ body {
     }
 }
 
-.icon-bar {
-   text-align: center;
-}
-
-.icon-bar a {
-       text-decoration: none;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background: #1F2933;
-        background: linear-gradient(166deg, rgba(31,41,51,1) 50%, rgba(13,13,92,1) 75%, rgb(26, 160, 5) 100%);
         color: #F5F7FA;
     }
     
     body a {
-        color: #CBD2D9;
+        color: tomato;
     }
     
     body a:visited {
-        color: #CBD2D9;
+        color: tomato;
+    }
+
+    em {
+        color: gold;
     }
 
     .icon-bar svg path {
@@ -53,11 +68,18 @@ body {
 
 @media (prefers-color-scheme: light) {
     body {
-        background: rgb(124,224,249);
-        background: linear-gradient(166deg, rgba(124,224,249,1) 11%, rgba(221,176,160,1) 80%, rgba(216,108,112,1) 100%);
+        background: rgb(255, 224, 251);
+    }
+
+    em {
+        color: darkred;
+    }
+
+    a {
+        color: indigo;
     }
     
-    body a:visited {
-        color: black;
+    a:visited {
+        color: indigo;
     }
 }
