@@ -1,0 +1,85 @@
+body {
+    width: 100vw;
+    height: calc(100vh - 30px);
+    margin: 0;
+}
+
+.left {
+    height: calc(100vh - 30px);
+}
+
+.main {
+    margin-top: 30px;
+}
+
+.right {
+    max-width: 90vw;
+}
+
+.icon-bar {
+    text-align: center;
+ }
+ 
+ .icon-bar a {
+        text-decoration: none;
+ }
+
+ em {
+     font-style: normal;
+ }
+
+@media screen and (min-width: 601px) {
+    .left {
+        float: left;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .left {
+        text-align: center;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1F2933;
+        color: #F5F7FA;
+    }
+    
+    body a {
+        color: tomato;
+    }
+    
+    body a:visited {
+        color: tomato;
+    }
+
+    em {
+        color: gold;
+    }
+
+    .icon-bar svg path {
+        fill: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: rgb(255, 224, 251);
+    }
+
+    em {
+        color: darkred;
+    }
+
+    a {
+        color: indigo;
+    }
+    
+    a:visited {
+        color: indigo;
+    }
+}
