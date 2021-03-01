@@ -4,7 +4,6 @@ import "./styles/typography.css";
 let song;
 
 const createSongDiv = (songName) => {
-
     /**
      * [ ] Add album art to songDiv
      * [ ] Add now playing logic
