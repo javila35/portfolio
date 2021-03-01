@@ -12,7 +12,7 @@ body {
     max-width: 90vw;
 }
 
-.icon-bar {
+.icon-bar, .song-div {
     text-align: center;
  }
  
