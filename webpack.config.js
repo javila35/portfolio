@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const dontenv = require("dontenv-webpack");
 const path = require("path");
 
 module.exports = {
@@ -11,9 +12,12 @@ module.exports = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: "src/index.html"
-    })],
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "src/index.html"
+        }),
+        new dontenv()
+    ],
     module: {
         rules: [
             {
