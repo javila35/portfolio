@@ -1,89 +1,93 @@
 .main {
-    margin-top: 3em;
+  margin-top: 2em;
 }
 
 .right {
-    max-width: 90vw;
+  max-width: 90vw;
 }
 
 .icon-bar {
-    text-align: center;
- }
- 
- .icon-bar a {
-        text-decoration: none;
- }
+  text-align: center;
+}
 
- em {
-     font-style: normal;
- }
+.icon-bar a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
 
 @media screen and (min-width: 601px) {
-    .left {
-        float: left;
-        text-align: center;
-        margin-right: 3em;
-        margin-left: 3em;
-    }
+  .left {
+    float: left;
+    text-align: center;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
 
-    .right {
-        margin-right: 4em;
-        overflow: hidden;
-    }
+  .right {
+    margin-right: 4em;
+    overflow: hidden;
+  }
+
+  .right h3 {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .left {
-        text-align: center;
-    }
+  .left {
+    text-align: center;
+  }
 
-    .right {
-        margin-right: 1em;
-        text-align: left;
-    }
+  .right {
+    margin-right: 1em;
+    text-align: left;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background: #1F2933;
-        color: #F5F7FA;
-    }
-    
-    body a {
-        color: tomato;
-    }
-    
-    body a:visited {
-        color: tomato;
-    }
+  body {
+    background: #1f2933;
+    color: #f5f7fa;
+  }
 
-    hr {
-        width: 100%;
-    }
+  body a {
+    color: tomato;
+  }
 
-    em {
-        color: gold;
-    }
+  body a:visited {
+    color: tomato;
+  }
 
-    .icon-bar svg path {
-        fill: white;
-    }
+  hr {
+    width: 100%;
+  }
+
+  em {
+    color: gold;
+  }
+
+  .icon-bar svg path {
+    fill: white;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background: rgb(255, 224, 251);
-    }
+  body {
+    background: rgb(255, 224, 251);
+  }
 
-    em {
-        color: darkred;
-    }
+  em {
+    color: darkred;
+  }
 
-    a {
-        color: indigo;
-    }
-    
-    a:visited {
-        color: indigo;
-    }
+  a {
+    color: indigo;
+  }
+
+  a:visited {
+    color: indigo;
+  }
 }
