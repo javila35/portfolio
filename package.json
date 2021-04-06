@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "author": "Joe Avila",
   "devDependencies": {
+    "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.0.2",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.2.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.24.1",
