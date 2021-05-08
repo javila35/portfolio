@@ -1,3 +1,23 @@
+body {
+  background: #ffb3e3;
+}
+
+em {
+  color: darkred;
+}
+
+a {
+  color: indigo;
+}
+
+a:visited {
+  color: indigo;
+}
+
+em {
+  font-style: normal;
+}
+
 .main {
   margin: 1em;
 }
@@ -20,10 +40,6 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-em {
-  font-style: normal;
 }
 
 @media screen and (min-width: 601px) {
@@ -68,23 +84,5 @@ em {
 
   .icon-bar svg path {
     fill: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background: rgb(255, 224, 251);
-  }
-
-  em {
-    color: darkred;
-  }
-
-  a {
-    color: indigo;
-  }
-
-  a:visited {
-    color: indigo;
   }
 }

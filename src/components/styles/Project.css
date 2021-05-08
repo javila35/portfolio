@@ -5,7 +5,9 @@
   width: 80vw;
   justify-content: space-between;
   border-radius: 4px;
-  padding: 2em;
+  padding: 1em;
+  background-color: #fff4fb;
+  border: 2px solid #ffccec;
 }
 
 .project-container:not(:last-of-type) {
@@ -19,11 +21,11 @@
   }
 }
 
-.project-container img {
-  float: left;
+.project-body {
+  text-align: left;
+  margin-left: 1em;
 }
 
-.project-body {
-  float: right;
-  text-align: left;
+.project-container h4 {
+  margin-top: 0;
 }

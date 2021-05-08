@@ -1,4 +1,5 @@
 import * as React from "react";
+import ReactHTMLParser from "react-html-parser";
 import "./styles/Project.css";
 
 export interface IProject {
@@ -46,10 +47,9 @@ export const Project: React.FC<ProjectProps> = ({
     <div className="project-container">
       {generateSrcSet(thumbnail)}
       <div className="project-body">
-        <h4 className="project-text">{title}</h4>
-        <p>{description}</p>
-        <p>Description coming soon</p> {/* //! Remove this line */}
-        <div className="project-text">
+        <h4>{title}</h4>
+        <p>{ReactHTMLParser(description)}</p>
+        <div>
           <a href={repo}>Repo</a>
           {backendRepo && <a href={backendRepo}>Backend Repo</a>}
           {deployedLink && <a href={deployedLink}>Live Site</a>}
