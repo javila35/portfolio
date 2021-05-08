@@ -1,7 +1,7 @@
 import * as React from "react";
 import { LeftColumn } from "./LeftColumn";
 import "./styles/Layout.css";
-import "./styles/typography.css";
+import "./styles/Typography.css";
 
 interface LayoutProps {
   /** Whether or not to display Joe's picture */
