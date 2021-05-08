@@ -3,11 +3,16 @@ import { LeftColumn } from "./LeftColumn";
 import "./styles/Layout.css";
 import "./styles/typography.css";
 
-export const Layout: React.FC = ({ children }) => {
+interface LayoutProps {
+  /** Whether or not to display Joe's picture */
+  noLeft?: boolean;
+}
+
+export const Layout: React.FC<LayoutProps> = ({ children, noLeft }) => {
   return (
     <>
-      <LeftColumn />
-      <div className="right">{children}</div>
+      {!noLeft && <LeftColumn />}
+      <div className={noLeft ? "center" : "right"}>{children}</div>
     </>
   );
 };

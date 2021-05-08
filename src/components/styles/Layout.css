@@ -6,6 +6,22 @@
   max-width: 90vw;
 }
 
+.center {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.center h2 {
+  margin: 0.5em;
+}
+
+.center nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 em {
   font-style: normal;
 }

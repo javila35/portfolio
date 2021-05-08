@@ -11,7 +11,10 @@ const IndexPage: React.FC = () => {
           <em>React and Typescript/JS</em> are my bread and butter, I'm quick to
           ask questions and learn new skills. You can see my previous work
           experience on my {/* comment to make space */}
-          <a href="assets/resume.pdf" target="_blank">
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vSr83mBKLN0pB7FlaVcYxdlUSu7XKPhWDwNO0VghMkpV0R_tzwMQS5QvFFWWhbKRYBhXsbl_DUb36nc/pub"
+            target="_blank"
+          >
             resume
           </a>{" "}
           or check out my <Link to="/projects">projects</Link>.
