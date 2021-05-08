@@ -1,0 +1,29 @@
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%;
+  width: 80vw;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 2em;
+}
+
+.project-container:not(:last-of-type) {
+  margin-bottom: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-container {
+    background-color: #4e667e;
+    border: 2px solid #3a4d5f;
+  }
+}
+
+.project-container img {
+  float: left;
+}
+
+.project-body {
+  float: right;
+  text-align: left;
+}
