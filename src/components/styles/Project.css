@@ -21,16 +21,6 @@
   }
 }
 
-@media screen and (max-width: 601px) {
-  .project-container {
-    display: block;
-  }
-
-  .center nav {
-    position: relative;
-  }
-}
-
 .project-body {
   text-align: left;
   margin-left: 1em;
@@ -43,4 +33,15 @@
 
 .project-links {
   margin-right: 1em;
+}
+
+@media screen and (max-width: 601px) {
+  .project-container {
+    display: block;
+    padding: 1em 0;
+  }
+
+  .center nav {
+    position: relative;
+  }
 }

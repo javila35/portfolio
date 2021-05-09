@@ -43,9 +43,9 @@ export const Project: React.FC<ProjectProps> = ({
   > => {
     return (
       <img
-        sizes="(min-width: 601px) 40vw, 30vw"
+        sizes="(min-width: 601px) 40vw, 70vw"
         srcSet={`
-              https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_600/${imgLink} 512w, 
+              https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_500/${imgLink} 512w, 
               https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_1024/${imgLink} 1024w`}
         src={`https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_600/${imgLink}`}
         alt={`Thumbnail for ${title}`}
@@ -64,7 +64,7 @@ export const Project: React.FC<ProjectProps> = ({
 
   return (
     <div className="project-container">
-      {generateSrcSet(thumbnail)}
+      <div>{generateSrcSet(thumbnail)}</div>
       <div className="project-body">
         <h4>{title}</h4>
         <em>{renderTechList()}</em>
