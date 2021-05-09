@@ -44,8 +44,8 @@ export const Project: React.FC<ProjectProps> = ({
     return (
       <img
         sizes="(min-width: 601px) 40vw, 30vw"
-        srcSet={`https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_600/${imgLink} 256w, 
-              https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_400/${imgLink} 512w, 
+        srcSet={`
+              https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_600/${imgLink} 512w, 
               https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_1024/${imgLink} 1024w`}
         src={`https://res.cloudinary.com/deijyaaid/image/upload/f_auto,c_scale,q_auto,r_30,w_600/${imgLink}`}
         alt={`Thumbnail for ${title}`}
