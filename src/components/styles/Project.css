@@ -21,11 +21,26 @@
   }
 }
 
+@media screen and (max-width: 601px) {
+  .project-container {
+    display: block;
+  }
+
+  .center nav {
+    position: relative;
+  }
+}
+
 .project-body {
   text-align: left;
   margin-left: 1em;
 }
 
-.project-container h4 {
+.project-body h4 {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.project-links {
+  margin-right: 1em;
 }

@@ -15,11 +15,6 @@ const Projects: React.FC = () => {
       <nav>
         <Link to="/">{"<- Back"}</Link>
       </nav>
-      <h5 style={{ color: "red" }}>
-        {
-          "This part of the site is under construction. Check back soon. <3 5/7/21"
-        }
-      </h5>
       <h2>Projects</h2>
       {renderProjects(ProjectArray)}
     </Layout>

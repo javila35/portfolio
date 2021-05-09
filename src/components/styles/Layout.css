@@ -38,8 +38,9 @@ em {
 
 .center nav {
   position: absolute;
-  top: 0;
-  left: 0;
+  font-size: xx-large;
+  top: 10px;
+  left: 10px;
 }
 
 @media screen and (min-width: 601px) {

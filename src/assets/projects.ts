@@ -18,18 +18,28 @@ const jsNoteDesc = `
 <p class="text_small">
   This fun project was the result of a 
   <a href='https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project' target='_blank'>
-    Typescript & React course created by Stephen Grider
-  </a>. 
+    Typescript & React course created by Stephen Grider.
+  </a>
 </p>
 `;
 
-const newsFlashDesc = ``;
+const newsFlashDesc = `
+  This was my capstone project from my time at Flatiron School. I didn't actually know what I wanted to make, which made it very difficult to finish.
+  I ended up settling on a news aggregator site, and this was the result. Since finishing school, I used this project as an opportunity to learn <em>Typescript</em> and the popular
+  <em>react-query</em> library.
+`;
 
-const jsTetDesc = ``;
+const jsTetDesc = `
+  This was my third project at Flatiron, and my first attempt at paired programming.
+  I had two great partners working on this and  I learned a lot about working in a codebase with others.
+  It was also just a very fun project to make, every break from code during school was spent playing Tetris.
+  It's a very simple app, but I learned a lot about CSS, HTML, and Javascript from this project.
+`;
 
 projects.push({
   repo: "https://github.com/javila35/in-browser-compiler",
   title: "JSNote",
+  tech: ["React", "Typescript", "Redux", "esbuild"],
   thumbnail: "v1620238345/npm_screenshot_dfgk53.png",
   description: jsNoteDesc,
 });
@@ -39,6 +49,7 @@ projects.push({
   backendRepo: "https://github.com/javila35/News-Flash-Backend",
   deployedLink: "https://news-flash-site.netlify.app/",
   title: "Newsflash",
+  tech: ["React", "Typescript", "Rails", "react-query"],
   thumbnail: "v1620430852/news-flash.png",
   description: newsFlashDesc,
 });
@@ -48,6 +59,7 @@ projects.push({
   backendRepo: "",
   deployedLink: "https://mod-3-tetris.herokuapp.com/",
   title: "JS Tetris",
+  tech: ["Javascript"],
   thumbnail: "v1620430840/js-tet_vwbrkf.png",
   description: jsTetDesc,
 });
