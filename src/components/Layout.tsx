@@ -1,5 +1,6 @@
 import * as React from "react";
 import { LeftColumn } from "./LeftColumn";
+import { Footer } from "./Footer";
 import "./styles/Layout.css";
 import "./styles/Typography.css";
 
@@ -13,6 +14,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, noLeft }) => {
     <>
       {!noLeft && <LeftColumn />}
       <div className={noLeft ? "center" : "right"}>{children}</div>
+      <Footer />
     </>
   );
 };
