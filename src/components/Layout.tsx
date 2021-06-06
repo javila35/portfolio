@@ -12,8 +12,10 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({ children, noLeft }) => {
   return (
     <>
-      {!noLeft && <LeftColumn />}
-      <div className={noLeft ? "center" : "right"}>{children}</div>
+      <div className="column-wrapper">
+        {!noLeft && <LeftColumn />}
+        <div className={noLeft ? "center" : "right"}>{children}</div>
+      </div>
       <Footer />
     </>
   );

@@ -6,7 +6,7 @@
 export class TextScramble {
   constructor(element) {
     this.element = element;
-    this.chars = "0123456789abcdefghijklmonpqrstuvwxyz";
+    this.chars = "!@#$%^&*()<>/[]{}";
     this.update = this.update.bind(this);
   }
 
