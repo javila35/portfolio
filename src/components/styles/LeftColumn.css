@@ -1,20 +1,21 @@
 .left {
-	text-align: center;
+  text-align: center;
 }
 .icon-bar {
-	text-align: center;
+  text-align: center;
 }
 
 .icon-bar a {
-	text-decoration: none;
-	margin: .5em;
+  text-decoration: none;
+  margin: 0.5em;
 }
 
 @media screen and (min-width: 601px) {
-	.left {
-		float: left;
-		text-align: center;
-		margin-right: 3em;
-		margin-left: 3em;
-	}
+  .left {
+    float: left;
+    text-align: center;
+    margin-right: 3em;
+    margin-left: 3em;
+    margin-top: 3em;
+  }
 }

@@ -1,5 +1,6 @@
 body {
-  background: #ffb3e3;
+  background: #82aaaa;
+  margin: 0;
 }
 
 em {
@@ -16,6 +17,11 @@ a:visited {
 
 em {
   font-style: normal;
+}
+
+.column-wrapper {
+  margin-top: 1em;
+  min-height: calc(100vh - 2em - 50px);
 }
 
 .main {
