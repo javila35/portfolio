@@ -11,7 +11,7 @@ const postConfig = {
 
 export const HitCounter: React.FC = () => {
   const visitCount = React.useRef<HTMLDivElement | null>(null);
-  const [counter, setCounter] = React.useState<number | null>(1000);
+  const [counter, setCounter] = React.useState<number | null>(null);
   const [hover, setHover] = React.useState<boolean>(false);
   const token = localStorage.getItem("token");
   let fx;
@@ -29,15 +29,15 @@ export const HitCounter: React.FC = () => {
     token ? null : localStorage.setItem("visited", "true");
     // If we find a token, do a get request.
     if (token) {
-      // fetch("https://nameless-waters-21558.herokuapp.com/counter")
-      fetch("http://localhost:3000/counter/")
+      fetch("https://nameless-waters-21558.herokuapp.com/counter")
+        // fetch("http://localhost:3000/counter/")
         .then((res) => res.json())
         .then((res) => setCounter(res))
         .catch(() => null);
     } else {
       // If we don't find a token, set one and do a post request
-      // fetch("https://nameless-waters-21558.herokuapp.com/", postConfig)
-      fetch("http://localhost:3000/", postConfig)
+      fetch("https://nameless-waters-21558.herokuapp.com/", postConfig)
+        // fetch("http://localhost:3000/", postConfig)
         .then((res) => res.json())
         .then((res) => setCounter(res));
     }
