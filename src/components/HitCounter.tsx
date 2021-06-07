@@ -13,7 +13,6 @@ export const HitCounter: React.FC = () => {
   const visitCount = React.useRef<HTMLDivElement | null>(null);
   const [counter, setCounter] = React.useState<number | null>(null);
   const [hover, setHover] = React.useState<boolean>(false);
-  const token = localStorage.getItem("token");
   let fx;
 
   /** Watch for ref to sync up to declare the text scramble class */
@@ -26,7 +25,8 @@ export const HitCounter: React.FC = () => {
 
   /** Fetch visitor count from backend */
   React.useEffect(() => {
-    token ? null : localStorage.setItem("visited", "true");
+    const token = typeof window !== 'undefined' && window.localStorage.getItem("token");
+    token ? null : window.localStorage.setItem("visited", "true");
     // If we find a token, do a get request.
     if (token) {
       fetch("https://nameless-waters-21558.herokuapp.com/counter")
