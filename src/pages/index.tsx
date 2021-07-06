@@ -12,7 +12,7 @@ const IndexPage: React.FC = () => {
           ask questions and learn new skills. You can see my previous work
           experience on my {/* comment to make space */}
           <a
-            href="https://docs.google.com/document/d/e/2PACX-1vSFuStOiUJ2lLyMV2D1_1Il4UGF6uUe0Efy55Rsx7KzZH3hDMD_CkO01iNf2V4IMA/pub"
+            href="https://docs.google.com/document/d/e/2PACX-1vS5MFQnB1QtP2y7xrzQ6skerE-EEHB_hNmJ22w4vEh7GKOpEKx2vxMTRbgRWU4LX8W4Ei5WGbLlRzar/pub"
             target="_blank"
           >
             resume
