@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { HitCounter } from "./HitCounter";
 import "./styles/Footer.css";
 
 export const Footer: React.FC = () => {
@@ -12,7 +11,7 @@ export const Footer: React.FC = () => {
             Projects
           </Link>
           <a
-            href="https://docs.google.com/document/d/e/2PACX-1vSr83mBKLN0pB7FlaVcYxdlUSu7XKPhWDwNO0VghMkpV0R_tzwMQS5QvFFWWhbKRYBhXsbl_DUb36nc/pub"
+            href="https://docs.google.com/document/d/e/2PACX-1vSFuStOiUJ2lLyMV2D1_1Il4UGF6uUe0Efy55Rsx7KzZH3hDMD_CkO01iNf2V4IMA/pub"
             className="nav"
             target="blank"
           >
@@ -22,7 +21,6 @@ export const Footer: React.FC = () => {
             Wordcloud
           </Link> */}
         </div>
-        <HitCounter />
       </div>
     </div>
   );
