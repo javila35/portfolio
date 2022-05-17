@@ -20,16 +20,22 @@ const IndexPage: React.FC = () => {
           or check out my <Link to="/projects">projects</Link>.
         </p>
       </Article>
-      <Article title="I'm looking for work!" titleComponent="h5">
+      <Article title="I'm open to opportunity" titleComponent="h5">
         <p>
-          My ideal role would be on a team of developers maintaining and adding
+          I'm currently employed with{" "}
+          <a href="https://www.availcarsharing.com/" target="_blank">
+            Avail Car Sharing
+          </a>{" "}
+          and very happy with my job. I'm always open to hearing about new
+          opportunities.
+          {/* My ideal role would be on a team of developers maintaining and adding
           new features to an app in production. The front end is where I'll be
           able to contribute initially. But I'm eager to continue honing my
           experience working on API's, especially those built in <em>Node</em>{" "}
-          and/or <em>GraphQL</em>.
+          and/or <em>GraphQL</em>. */}
         </p>
       </Article>
-      <Article title="What I bring to the table:" titleComponent="h5">
+      {/* <Article title="What I bring to the table:" titleComponent="h5">
         <p>
           I'm a team player with great communication! My active listening skill
           relates to my ability to pick up new technical skills quickly. The
@@ -37,7 +43,7 @@ const IndexPage: React.FC = () => {
           feedback. I have a positive attitude that I carry with me into daily
           meetings, and paired programming sessions.
         </p>
-      </Article>
+      </Article> */}
     </Layout>
   );
 };
